@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 12em;
+  /* height: 12em; */
   padding: 1rem;
   background: #121212;
   color: #f7d354;
@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 25px 25px;
   gap: 20px;
 }
@@ -34,19 +35,22 @@
 .socialContainer {
   width: 52px;
   height: 52px;
-  /* background-color: rgb(44, 44, 44); */
   background: #121212;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition-duration: 0.3s;
   border-radius: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .socialContainer img {
   width: 40px;
   filter: brightness(0) invert(1);
+}
+
+.containerThree img {
+  width: 50px;
 }
 
 /* Instagram */
@@ -75,8 +79,20 @@
   transform: scale(1.5);
 }
 
-/* LinkedIn */
+/* Gmail */
 .containerThree:hover {
+  background: linear-gradient(
+    45deg,
+    #d93025 20%,
+    #fbbc05 40%,
+    #1a73e8 60%,
+    #34a853 80%
+  );
+  transform: scale(1.5);
+}
+
+/* LinkedIn */
+.containerFour:hover {
   background: linear-gradient(
     45deg,
     #0072b1 0%,
@@ -89,7 +105,7 @@
 }
 
 /* WhatsApp */
-.containerFour:hover {
+.containerFive:hover {
   background: linear-gradient(
     45deg,
     #1a8f3c 0%,
@@ -103,7 +119,7 @@
 
 .socialContainer:active {
   transform: scale(0.9);
-  transition-duration: 0.3s;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .socialContainer:hover img {
