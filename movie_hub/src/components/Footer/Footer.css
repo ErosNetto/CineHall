@@ -1,0 +1,123 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 12em;
+  padding: 1rem;
+  background: #121212;
+  color: #f7d354;
+}
+
+.contact-title {
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.contact-card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  /* background-color: rgb(44, 44, 44); */
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  border-radius: 15px;
+}
+
+.socialContainer img {
+  width: 40px;
+  filter: brightness(0) invert(1);
+}
+
+/* Instagram */
+.containerOne:hover {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  transform: scale(1.5);
+}
+
+/* GitHub */
+.containerTwo:hover {
+  background: linear-gradient(
+    45deg,
+    #5a2c91 0%,
+    #70369c 25%,
+    #8b4ea1 50%,
+    #a66eb3 75%,
+    #d1c6e1 100%
+  );
+  transform: scale(1.5);
+}
+
+/* LinkedIn */
+.containerThree:hover {
+  background: linear-gradient(
+    45deg,
+    #0072b1 0%,
+    #0073e6 25%,
+    #0084ff 50%,
+    #0091ff 75%,
+    #00a2ff 100%
+  );
+  transform: scale(1.5);
+}
+
+/* WhatsApp */
+.containerFour:hover {
+  background: linear-gradient(
+    45deg,
+    #1a8f3c 0%,
+    #25d366 25%,
+    #2bdc6a 50%,
+    #3bd76c 75%,
+    #47e08d 100%
+  );
+  transform: scale(1.5);
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialContainer:hover img {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

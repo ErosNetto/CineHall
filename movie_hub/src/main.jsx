@@ -11,7 +11,7 @@ import "./index.css";
 import App from "./App.jsx";
 
 // Pages
-import Movie from "./pages/Movie.jsx";
+import Movie from "./pages/Movie/Movie.jsx";
 import Search from "./pages/Search.jsx";
 import Home from "./pages/Home.jsx";
 
