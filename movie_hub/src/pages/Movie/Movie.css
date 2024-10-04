@@ -2,13 +2,18 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 1200px;
   margin: 2rem auto;
   margin-top: 6rem;
   padding: 2rem;
 }
 
 .movie-page .movie-card {
+  max-width: 600px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.movie-page .movie-card img {
   width: 100%;
 }
 
@@ -41,7 +46,7 @@
 .tagline {
   text-align: center;
   font-size: 1.3rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .info {

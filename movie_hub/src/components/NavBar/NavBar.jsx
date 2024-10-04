@@ -18,9 +18,9 @@ const NavBar = () => {
   };
 
   return (
-    <nav id="navbar">
+    <nav className="navbar">
       <h2>
-        <Link to="/">
+        <Link to="/" aria-label="Home">
           <BiCameraMovie />
           MovieHub
         </Link>
@@ -31,8 +31,9 @@ const NavBar = () => {
           placeholder="Busque um filme"
           onChange={(e) => setSearch(e.target.value)}
           value={search}
+          aria-label="Busca de filme"
         />
-        <button type="submit">
+        <button type="submit" aria-label="Buscar filme">
           <BiSearchAlt2 />
         </button>
       </form>

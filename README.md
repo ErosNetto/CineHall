@@ -2,6 +2,8 @@
 
 **MovieHub** é um projeto de uma biblioteca de filmes criada com React e integração com a API do TMDB (The Movie Database). Este projeto permite aos usuários visualizar uma lista de filmes e pesquisar filmes específicos.
 
+![Demonstração do MovieHub](./movie_hub/public/gif-movie-hub.gif)
+
 ## 🚀 Funcionalidades
 
 - Exibição de uma biblioteca de filmes.

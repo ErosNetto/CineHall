@@ -45,7 +45,7 @@ const Movie = () => {
       {!movie && <p>Carregando...</p>}
       {movie && (
         <>
-          <MovieCard movie={movie} showLink={false} />
+          <MovieCard movie={movie} />
           <p className="tagline">{movie.tagline}</p>
           <div className="info">
             <h3>

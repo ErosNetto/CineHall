@@ -1,33 +1,36 @@
-#navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #121212;
+  background: #212121;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 
-#navbar h2 a {
+.navbar h2 a {
   display: flex;
   align-items: center;
+  font-size: 1.8rem;
+  font-weight: 800;
   gap: 0.5rem;
 }
 
-#navbar form {
+.navbar form {
   display: flex;
   gap: 0.5rem;
 }
 
-#navbar input {
+.navbar input {
   padding: 0.2rem 0.8rem;
   border-radius: 4px;
   border: none;
 }
 
-#navbar form button {
+.navbar form button {
   background: #f7d354;
   border: 2px solid #f7d354;
   border-radius: 4px;
@@ -40,13 +43,13 @@
   transition: 0.3s;
 }
 
-#navbar form button:hover {
+.navbar form button:hover {
   background-color: transparent;
   color: #f7d354;
 }
 
 @media (max-width: 480px) {
-  #navbar {
+  .navbar {
     flex-direction: column;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
