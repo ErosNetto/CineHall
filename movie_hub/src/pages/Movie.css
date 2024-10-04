@@ -4,6 +4,12 @@
   flex-direction: column;
   max-width: 600px;
   margin: 2rem auto;
+  margin-top: 6rem;
+  padding: 2rem;
+}
+
+.movie-page .movie-card {
+  width: 100%;
 }
 
 .movie-page svg {
@@ -55,4 +61,11 @@
 
 .description p {
   line-height: 1.4rem;
+  text-align: justify;
+}
+
+@media (max-width: 480px) {
+  .movie-page {
+    margin-top: 2rem;
+  }
 }

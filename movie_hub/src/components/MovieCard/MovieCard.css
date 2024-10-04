@@ -15,9 +15,12 @@
 }
 
 .movie-card img,
-.movie-card h2,
 .movie-card p {
   margin-bottom: 1rem;
+}
+
+.movies-container div h2 {
+  margin-bottom: 1.5rem;
 }
 
 .movie-card svg {
@@ -38,4 +41,16 @@
 .movie-card a:hover {
   background-color: transparent;
   color: #f7d354;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-card {
+    width: 100%;
+  }
 }

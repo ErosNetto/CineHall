@@ -17,3 +17,9 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+@media (max-width: 480px) {
+  .container .title {
+    margin-top: 2rem;
+  }
+}
