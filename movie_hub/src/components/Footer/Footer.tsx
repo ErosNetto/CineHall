@@ -52,7 +52,7 @@ const Footer = () => {
           <img src={Whatsapp} alt="WhatsApp" />
         </a>
       </div>
-      <p className="copyright">Feito por Eros &copy;2024</p>
+      <p className="copyright">Feito por Eros N. Antunes &copy;2024</p>
     </footer>
   );
 };
